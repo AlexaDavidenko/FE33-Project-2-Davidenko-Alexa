@@ -1,0 +1,93 @@
+header {
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 38px 0 120px 0; 
+}
+
+header::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/mask.png);
+}
+.header-wrap {
+    margin: 0 -15px;
+    z-index: 1;
+    position: relative;
+}
+.header-wrap-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 36px 0;
+    border-bottom: 1px solid #BABBC5 ;
+    margin: 0 15px 130px 15px;
+    
+}
+
+
+.navigation-list {
+    width: 711px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-list li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.navigation-list li.active::after {
+    content: "";
+    border-bottom: 3px solid #C6CBCD;
+    position: absolute;
+    width: 100%;
+    top: 72px;
+    left: 0;
+}
+.navigation-list a {
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.header-wrap-main {
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 15px;
+}
+.header-wrap-main h1{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+}
+.main-wrap-text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 82px;
+}
+
+
+.button a {
+    width: 369px;
+    background-color: #FF4343;
+    padding: 20px 80px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}

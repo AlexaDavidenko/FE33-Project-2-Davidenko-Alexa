@@ -1,0 +1,57 @@
+.staff {
+    padding: 114px 0;
+}
+.social-list .fa-brands {
+    color: #C6CBCD;
+    font-size: 18px; 
+}
+
+.staff-wrap {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.staff-wrap-item {
+    width: 260px;
+    margin: 0 15px;
+}
+.staff-wrap-item img {
+    margin-bottom: 30px;
+}
+.staff-wrap-item-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2D3033;
+}
+.staff-wrap-item-post {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FF4343;
+}
+.staff-wrap-item-text span {
+    display: block;
+}
+.staff-wrap-item-text {
+    margin-bottom: 18px;
+}
+.wrap-item-text {
+    margin-bottom: 38px;
+}
+.social-list {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+   
+}  
+.social-list a {
+    width: 39px;
+    height: 39px;
+    border: 1px solid #C6CBCD; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
