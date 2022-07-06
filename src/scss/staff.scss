@@ -1,5 +1,9 @@
 .staff {
     padding: 114px 0;
+    
+    @media(max-width: 320px) {
+        padding: 34px 0;
+    }
 }
 .social-list .fa-brands {
     color: #C6CBCD;
@@ -13,9 +17,14 @@
     flex-wrap: wrap;
 }
 .staff-wrap-item {
-    width: 260px;
+    width: 255px;
     margin: 0 15px;
+
+    @media(max-width: 320px) {
+        width: 280px;   
+    }
 }
+
 .staff-wrap-item img {
     margin-bottom: 30px;
 }
@@ -24,13 +33,28 @@
     font-size: 24px;
     line-height: 28px;
     color: #2D3033;
+
+    @media(max-width: 320px) {
+        font-size: 18px;
+        line-height: 21px;
+    }
 }
 .staff-wrap-item-post {
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
     color: #FF4343;
+
+    @media(max-width: 320px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+.wrap-item-text p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #6C7279
 }
 .staff-wrap-item-text span {
     display: block;
@@ -54,4 +78,11 @@
     display: flex;
     justify-content:center;
     align-items: center;
+}
+
+
+@media(max-width: 320px) {
+    .social-list { 
+    margin-bottom: 49px;
+    }
 }

@@ -4,7 +4,13 @@ header {
     background-position: center;
     background-size: cover;
     position: relative;
-    padding: 38px 0 120px 0; 
+    padding: 36px 0 120px 0; 
+
+    
+
+    @media(min-width:320px) {
+        padding: 21px 0 52px 0;  
+    } 
 }
 
 header::after {
@@ -19,7 +25,8 @@ header::after {
 .header-wrap {
     margin: 0 -15px;
     z-index: 1;
-    position: relative;
+    position: relative; 
+
 }
 .header-wrap-menu {
     display: flex;
@@ -28,8 +35,29 @@ header::after {
     flex-wrap: wrap;
     padding: 36px 0;
     border-bottom: 1px solid #BABBC5 ;
-    margin: 0 15px 130px 15px;
+    margin: 0 15px 131px 15px;
     
+    
+    @media(max-width:1024px) {
+    margin-bottom: 157px;  
+ }
+    
+    @media(max-width:320px) {
+       border-bottom: none;
+       margin-bottom: 70px;
+       padding: 0;  
+}
+}
+
+.bars {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    display: none;
+
+    @media(min-width:320px) {
+    display: block;
+ }
 }
 
 
@@ -38,6 +66,10 @@ header::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
+    @media(min-width:320px) {
+       display: none;
+    }
 }
 .navigation-list li {
     padding: 10px 30px;
@@ -51,6 +83,11 @@ header::after {
     width: 100%;
     top: 72px;
     left: 0;
+    
+    @media(max-width:320px) {
+        border-bottom: none;
+    }    
+
 }
 .navigation-list a {
     color:#FFFFFF;
@@ -72,14 +109,28 @@ header::after {
     line-height: 75px;
     text-transform: uppercase;
     margin-bottom: 31px;
-}
-.main-wrap-text {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 82px;
+
+    @media(min-width: 320px) {
+        font-size:32px;
+        line-height: 37px;
+    }
 }
 
+.main-wrap-text p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 91px;
 
+   
+
+    @media(min-width: 320px) {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 51px;
+    } 
+
+}  
+    
 .button a {
     width: 369px;
     background-color: #FF4343;
@@ -90,4 +141,18 @@ header::after {
     line-height: 28px;
     color: #FFFFFF;
     text-transform: uppercase;
+
+   
+    @media (min-width: 320px) {
+        padding: 20px 30px;
+    }
+}
+
+@media(min-width: 320px) {
+    .img-one {
+        width: 67px;
+    }
+    .img-two {
+        width: 34px;
+    }
 }

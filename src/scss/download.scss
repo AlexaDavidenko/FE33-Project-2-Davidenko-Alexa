@@ -1,15 +1,40 @@
 .downloand {
     padding: 114px 0;
+   
+    @media(max-width: 320px) {
+        padding: 45px 0;
 }
-
+}
 .downloand-wrap {
     text-align: center;
+} 
+.downloand-wrap-item {
+    margin-bottom:10px;
 }
-.downloand-wrap h2 {
+.downloand-wrap-item span {
     font-weight: 500;
     font-size: 30px;
-    line-height: 55px;
+    line-height: 35px;
     color: #000000;
+   
+
+    @media(max-width: 320px) {
+        font-size:18px;
+        line-height: 21px;
+        text-align: center;
+        width: 280px;
+        
+    }
+}
+
+
+@media(max-width: 320px) {
+    .downloand-wrap-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    }
+    
 }
 .downloand-wrap h3 {
     font-weight: 700;
@@ -18,6 +43,13 @@
     color: #000000;
     text-transform: uppercase;
     margin-bottom: 48px;
+
+    @media(max-width: 320px) {
+        font-size:13px;
+        line-height: 15px;
+        margin-bottom: 28px;
+       text-align: center;
+    }
 }
 
 .section-btn a {
@@ -30,4 +62,10 @@
     line-height: 28px;
     color: #FFFFFF;
     text-transform: uppercase;
+
+    @media(max-width: 320px) {
+        font-size:18px;
+        line-height: 21px;
+       
+    }
 }
